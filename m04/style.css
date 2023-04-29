@@ -26,6 +26,12 @@ body {
 .column1 {
 	background-color: #ADD8E6;
 }
+.column2 {
+	background-color: #00FFFF;
+}
+.column3 {
+	background-color: #A7A18F;
+}
 li {
 	display: inline;
 	padding: 0.5em;
