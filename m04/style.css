@@ -23,6 +23,9 @@ body {
 	.column3 {
 	margin-right: 0%;
 }
+.column1 {
+	background-color: #ADD8E6;
+}
 li {
 	display: inline;
 	padding: 0.5em;
