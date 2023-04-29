@@ -7,7 +7,7 @@ body {
 	width: 90%;
 	margin: 0 auto;
 	background-image: url("https://images.unsplash.com/photo-1629197521865-4946b4acd2b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF2eSUyMGJsdWV8ZW58MHx8MHx8&w=1000&q=80");
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 }
 #content {
 	overflow: auto;
@@ -48,7 +48,7 @@ li {
 }
 #feature {
 	background-color: #E8E4C9;
-	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShRjmJU_vIR5_rp0Db0YwOOncYPI7NFQm0rd2r-OXppH_biCO4i4V8CFkXCvjHVgjwt44:https://varsitybase.com/imagecache/frontend-school-mascot/product_images/770/yH3NHThqNL9ycIs29vRF6knCwngBj3fnLaTeNPhZ.jpeg&usqp=CAU");
+	background-image: url("https://creazilla-store.fra1.digitaloceanspaces.com/emojis/58246/chess-pawn-emoji-clipart-xl.png");
 	background-size: contain;
 	background-position: left;
 	background-repeat: no-repeat;
