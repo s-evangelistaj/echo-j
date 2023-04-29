@@ -23,13 +23,13 @@ body {
 	.column3 {
 	margin-right: 0%;
 }
-#column1 {
+.column1 {
 	background-color: #ADD8E6;
 }
-#column2 {
+.column2 {
 	background-color: #00FFFF;
 }
-#column3 {
+.column3 {
 	background-color: #A7A18F;
 }
 li {
