@@ -24,13 +24,13 @@ body {
 	margin-right: 0%;
 }
 .column1 {
-	background-color: #ADD8E6;
+	color: #ADD8E6;
 }
 .column2 {
-	background-color: #00FFFF;
+	color: #00FFFF;
 }
 .column3 {
-	background-color: #A7A18F;
+	color: #A7A18F;
 }
 li {
 	display: inline;
