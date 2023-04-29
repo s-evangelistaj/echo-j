@@ -43,5 +43,7 @@ li {
 #feature, .article {
 	height: 10em;
 	margin-bottom: 1em;
+}
+#feature {
 	background-color: #E8E4C9;
 }
