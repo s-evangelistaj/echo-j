@@ -18,21 +18,12 @@ body {
 #nav {
 	background-color: #1974D2;
 }
-.column1, .column2, .column3 {
+.column {
 	width: 31.3%;
-	float: left;
-	margin: 1%;}
-	.column3 {
-	margin-right: 0%;
+	margin: auto;
 }
-.column1 {
-	background-color: #1357BE;
-}
-.column2 {
+.column {
 	background-color: #0D3AA9;
-}
-.column3 {
-	background-color: #061D95;
 }
 li {
 	display: inline;
