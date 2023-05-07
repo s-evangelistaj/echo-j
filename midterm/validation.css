@@ -25,7 +25,6 @@ body {
 	margin: 1%;
   	float: left;
   	background-color: #0D3AA9;
-	height: 400px;
 }
 .css {
   	width: 40%;
@@ -38,11 +37,11 @@ li {
 	padding: 0.5em;
 }
 .article {
-	height: 300em;
+	height: 20em;
 	margin-bottom: 1em;
 }
 img {
 	z-index: 10;
-	max-width: 20%;
-	height: 20%;
+	max-width: 50%;
+	height: 50%;
 }
