@@ -8,6 +8,8 @@ body {
 	margin: 0 auto;
 	background-image: url("https://t4.ftcdn.net/jpg/05/25/26/35/360_F_525263584_x7NJHO63xd7G3WNr37vLGmtbfRI01vsy.jpg");
 	background-repeat: repeat;
+	z-index: -1;
+	position: relative;
 }
 #content {
 	overflow: auto;
@@ -21,14 +23,14 @@ body {
 .html {
 	width: 40%;
 	margin: 1%;
-  float: left;
-  background-color: #0D3AA9;
+  	float: left;
+  	background-color: #0D3AA9;
 }
 .css {
-  width: 40%;
+  	width: 40%;
 	margin: 1%;
-  float: right;
-  background-color: #0D3AA9;
+  	float: right;
+  	background-color: #0D3AA9;
 }
 li {
 	display: inline;
