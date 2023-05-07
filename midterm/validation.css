@@ -14,7 +14,7 @@ body {
 #content {
 	overflow: auto;
 }
-#nav, #feature, #footer {
+#nav {
 	margin: 1%;
 }
 #nav {
@@ -32,23 +32,17 @@ body {
 	margin: 1%;
   	float: right;
   	background-color: #0D3AA9;
-	height: 400px;
 }
 li {
 	display: inline;
 	padding: 0.5em;
 }
-#footer {
-	background-color: #000080;
-	padding: 0.5em 0;
-}
-#feature, .article {
-	height: 10em;
+.article {
+	height: 300em;
 	margin-bottom: 1em;
-}
-#feature {
-	background-color: #00008B;
 }
 img {
 	z-index: 10;
+	max-width: 20%;
+	height: 20%;
 }
