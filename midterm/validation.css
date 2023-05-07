@@ -25,12 +25,14 @@ body {
 	margin: 1%;
   	float: left;
   	background-color: #0D3AA9;
+	height: 400px;
 }
 .css {
   	width: 40%;
 	margin: 1%;
   	float: right;
   	background-color: #0D3AA9;
+	height: 400px;
 }
 li {
 	display: inline;
