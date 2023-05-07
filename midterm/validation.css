@@ -42,6 +42,6 @@ li {
 }
 img {
 	z-index: 10;
-	max-width: 90%;
-	height: 90%;
+	max-width: 100%;
+	height: 100%;
 }
