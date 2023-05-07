@@ -37,7 +37,7 @@ li {
 	padding: 0.5em;
 }
 .article {
-	height: 5em;
+	height: auto;
 	margin-bottom: 1em;
 }
 img {
