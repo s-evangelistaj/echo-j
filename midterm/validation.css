@@ -49,3 +49,6 @@ li {
 #feature {
 	background-color: #00008B;
 }
+img {
+	z-index: 10;
+}
