@@ -37,11 +37,11 @@ li {
 	padding: 0.5em;
 }
 .article {
-	height: 20em;
+	height: 10em;
 	margin-bottom: 1em;
 }
 img {
 	z-index: 10;
-	max-width: 50%;
-	height: 50%;
+	max-width: 90%;
+	height: 90%;
 }
