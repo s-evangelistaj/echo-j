@@ -17,7 +17,6 @@ function upRight(pHeight, pColorEven, pColorOdd, pSymbol){
     }
     rLine +="</p>;
   }
-  
   documentgetElementById("upRight").innerHTML = rLine;
 }
 
