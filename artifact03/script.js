@@ -34,5 +34,5 @@ function downRight(pHeight, pColorEven, pColorOdd, pSymbol){
     rLine += "</p>";
   }
   
-  document.getElementById("downRight").innterHTML = rLine;
+  document.getElementById("downRight").innerHTML = rLine;
 }
