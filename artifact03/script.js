@@ -12,10 +12,10 @@ function upRight(pHeight, pColorEven, pColorOdd, pSymbol){
       if (j%2)
         rLine +="<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
       else
-        rLine +="<span style'color:" + pColorOdd + ";'>" + pSymbol + "</span>";
+        rLine += "<span style'color:" + pColorOdd + ";'>" + pSymbol + "</span>";
       
     }
-    rLine +="</p>;
+    rLine += "</p>";
   }
   documentgetElementById("upRight").innerHTML = rLine;
 }
@@ -31,7 +31,7 @@ function downRight(pHeight, pColorEven, pColorOdd, pSymbol){
         rLine +="<span style='color:" + pColorOdd + ";'>" + pSymbol + "</span>";
       
     }
-    rLine +="</p>;
+    rLine += "</p>";
   }
   
   document.getElementById("downRight").innterHTML = rLine;
