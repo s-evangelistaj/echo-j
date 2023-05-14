@@ -6,6 +6,11 @@
 	margin: auto;
 }
 
+.maincontainer {
+	width: 1365px;
+	height: 961px;
+}
+
 p {
   margin: 0px;
 }
