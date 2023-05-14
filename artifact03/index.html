@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="description" content="Artifact 03 - Create a Rhombus">
-    <meta charset="UTF-8">
-    <title>Artifact 03 - Create a Rhombus</title>
-	<link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <label>What will the size of the rhombus be?</label><br>
-    <input type="text" id="rombusHeight" value="5" size="5">
-    <br>
-    <label>What will the color for each even position be?</label><br>
-    <select id="evenColor">
-      <option value="#0000FF">Blue</option>
-      <option value="#00008B">Dark Blue</option>
-      <option value="#000080">Navy Blue</option>
-    </select><br>
-    <label>What will the color for each odd position be?</label><br>
-    <select id="oddColor">
-      <option value="#FFFF00">Yellow</option>
-      <option value="#8B8000">Dark Yellow</option>
-      <option value="#FFD700">Gold</option>
-    </select><br>
-    <label>What symbol will the rhombus be made from?</label>
-    <select id="symbol">
-      <option value="0">0</option>
-      <option value="*">*</option>
-      <option value="H">H</option>
-    </select><br>
-    <button onclick="createRhombus(document.getElementById('rombusHeight').value, document.getElementById('evenColor').value, document.getElementById('oddColor').value, document.getElementById('symbol').value);">Display your rhombus</button>
-    <div class="container">
-    	 <div id="upLeft">
-	     </div><div id="upRight">
-      </div><div id="downLeft">
-      </div><div id="downRight">
-      </div>
-    </div>
-    <script src="script.js"></script>
-  </body>
+	<head>  
+		<meta name="description" content="Artifact 03 - Create a Rhombus">
+    		<meta charset="UTF-8">
+    		<title>Artifact 03 - Create a Rhombus</title>
+   		<link rel="stylesheet" href="style.css">
+  	</head>
+  	<body>
+	  	<label>What will the size of the rhombus be?</label><br>
+	  	<input type="text" id="rombusHeight" value="5" size="5">
+	  	<br>
+	  	<label>What will the color for each even position be?</label><br>
+	  	<select id="evenColor">
+		    	<option value="#0000FF">Blue</option>
+		    	<option value="#00008B">Dark Blue</option>
+		    	<option value="#000080">Navy Blue</option>
+	  	</select><br>
+	  	<label>What will the color for each odd position be?</label><br>
+	  	<select id="oddColor">
+		  	<option value="#FFFF00">Yellow</option>
+		  	<option value="#8B8000">Dark Yellow</option>
+		  	<option value="#FFD700">Gold</option>
+	    	</select><br>
+	    	<label>What symbol will the rhombus be made from?</label>
+	    	<select id="symbol">
+		      	<option value="0">0</option>
+		      	<option value="*">*</option>
+		      	<option value="H">H</option>
+	    	</select><br>
+	    	<button onclick="createRhombus(document.getElementById('rombusHeight').value, document.getElementById('evenColor').value, document.getElementById('oddColor').value, document.getElementById('symbol').value);">Display your rhombus</button>
+	    	<div class="container">
+		 	<div id="upLeft">
+		 	</div><div id="upRight">
+		 	</div><div id="downLeft">
+		 	</div><div id="downRight">
+		 	</div>
+	    	</div>
+	    	<script src="script.js"></script>
+  	</body>
 </html>
