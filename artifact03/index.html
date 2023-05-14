@@ -4,6 +4,7 @@
     <meta name="description" content="Artifact 03 - Create a Rhombus">
     <meta charset="UTF-8">
     <title>Artifact 03 - Create a Rhombus</title>
+	<link rel="stylesheet" href="style.css">
   </head>
   <body>
     <label>What will the size of the rhombus be?</label><br>
@@ -28,10 +29,13 @@
       <option value="H">H</option>
     </select><br>
     <button onclick="createRhombus(document.getElementById('rombusHeight').value, document.getElementById('evenColor').value, document.getElementById('oddColor').value, document.getElementById('symbol').value);">Display your rhombus</button>
-    <div id="upLeft">Rhombus</div>
-    <div id="upRight"></div>
-    <div id="downLeft"></div>
-    <div id="downRight"></div>
+    <div class="container">
+    	 <div id="upLeft">
+	     </div><div id="upRight">
+      </div><div id="downLeft">
+      </div><div id="downRight">
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
