@@ -5,6 +5,7 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
   downLeft(pHeight, pColorEven, pColorOdd, pSymbol);
 }
 
+
 function upRight(pHeight, pColorEven, pColorOdd, pSymbol){
   var rLine="";
   for (i=0;i<pHeight;i++){
