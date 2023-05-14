@@ -1,1 +1,42 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+	padding: 0;
+	margin: auto;
+}
 
+p {
+  margin: 0px;
+}
+
+#upRight {
+	float: right;
+	position: relative;
+	width: 45%;
+}
+
+#downRight {
+	float: right;
+	position: relative;
+	width: 45%;
+}
+
+#upLeft { 
+	float: left;
+  position: relative;
+	direction: rtl;
+	width: 45%;
+	margin-left: 130px;
+}
+
+#downLeft {
+	float: left;
+  position: relative;
+	direction: rtl;
+	width: 45%;
+	margin-left: 130px;
+}
+
+
+		
