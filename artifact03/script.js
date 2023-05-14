@@ -3,7 +3,6 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
   downRight(pHeight, pColorEven, pColorOdd, pSymbol);
   upLeft(pHeight, pColorEven, pColorOdd, pSymbol);
   downLeft(pHeight, pColorEven, pColorOdd, pSymbol);
-  
 }
 
 function upRight(pHeight, pColorEven, pColorOdd, pSymbol){
@@ -15,7 +14,6 @@ function upRight(pHeight, pColorEven, pColorOdd, pSymbol){
         rLine +="<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
       else
         rLine +="<span style='color:" + pColorOdd + ";'>" + pSymbol + "</span>";
-       
     }
     rLine += "</p>";
   }
@@ -31,11 +29,9 @@ function downRight(pHeight, pColorEven, pColorOdd, pSymbol){
         rLine +="<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
       else
         rLine +="<span style='color:" + pColorOdd + ";'>" + pSymbol + "</span>";
-      
     }
     rLine += "</p>";
   }
-  
   document.getElementById("downRight").innerHTML = rLine;
 }
 
@@ -48,7 +44,6 @@ function upLeft(pHeight, pColorEven, pColorOdd, pSymbol){
         lLine +="<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
       else
         lLine +="<span style='color:" + pColorOdd + ";'>" + pSymbol + "</span>";
-       
     }
     lLine += "</p>";
   }
@@ -64,10 +59,8 @@ function downLeft(pHeight, pColorEven, pColorOdd, pSymbol){
         lLine +="<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
       else
         lLine +="<span style='color:" + pColorOdd + ";'>" + pSymbol + "</span>";
-      
     }
     lLine += "</p>";
   }
-  
   document.getElementById("downLeft").innerHTML = lLine;
 }
