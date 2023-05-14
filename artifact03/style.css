@@ -13,20 +13,20 @@ p {
 #upRight {
 	float: right;
 	position: relative;
-	width: 50%;
+	width: 45%;
 }
 
 #downRight {
 	float: right;
 	position: relative;
-	width: 50%;
+	width: 45%;
 }
 
 #upLeft { 
 	float: left;
   	position: relative;
 	direction: rtl;
-	width: 50%;
+	width: 45%;
 	margin-left: 130px;
 }
 
@@ -34,7 +34,7 @@ p {
 	float: left;
   	position: relative;
 	direction: rtl;
-	width: 50%;
+	width: 45%;
 	margin-left: 130px;
 }
 
