@@ -21,13 +21,13 @@ body {
 	background-color: #1974D2;
 }
 .html {
-	width: 50%;
+	width: 40%;
 	margin: 1%;
   	float: left;
   	background-color: #0D3AA9;
 }
 .css {
-  	width: 50%;
+  	width: 40%;
 	margin: 1%;
   	float: right;
   	background-color: #0D3AA9;
@@ -42,6 +42,6 @@ li {
 }
 img {
 	z-index: 10;
-	max-width: 100%;
+	max-width: 95%;
 	height: auto;
 }
