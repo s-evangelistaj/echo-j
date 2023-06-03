@@ -1,1 +1,314 @@
+<!DOCTYPE html>
 
+<html lang="en">
+  <head>
+    <title>
+      Artifact 04 - Validate Contact Us Form Using JavaScript
+    </title>
+    <meta name="description" content="Artifact 04 - Validate Contact Us Form Using JavaScript">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form action="thankyou.html" onsubmit="return validateForm();">
+      <table>
+        <tr>
+          <td>
+            First Name
+          </td>
+          <td>
+            <input type="text" name="FirstName">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Last Name
+          </td>
+          <td>
+            <input type="text" name="LastName">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Email
+          </td>
+          <td>
+            <input type="text" name="Email">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Phone
+          </td>
+          <td>
+            <input type="text" name="Phone">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Username
+          </td>
+          <td>
+            <input type="text" name="Username">
+          </td>
+        </tr>
+		<tr>
+          <td>
+            Password
+          </td>
+          <td>
+            <input type="text" name="Password">
+          </td>
+        </tr>
+		<tr>
+          <td>
+            Address
+          </td>
+          <td>
+            <input type="text" name="Address">
+          </td>
+        </tr>
+		<tr>
+          <td>
+            City
+          </td>
+          <td>
+            <input type="text" name="City">
+          </td>
+        </tr>
+		<tr>
+		  <td>
+		    State
+		  </td>
+		  <td>
+		    <select name="State">
+			<option value="00" selected="selected">
+			  [choose yours]
+			</option>
+			<option value="01">
+			  Alabama
+			</option>
+			<option value="02">
+			  Alaska
+			</option>
+			<option value="03">
+			  Arizona
+			</option>
+			<option value="04">
+			  Arkansas
+			</option>
+			<option value="05">
+			  California
+			</option>
+			<option value="06">
+			  Colorado
+			</option>
+			<option value="07">
+			  Connecticut
+			</option>
+			<option value="08">
+			  Delaware
+			</option>
+			<option value="09">
+			  Florida
+			</option>
+			<option value="10">
+			  Georgia 
+			</option>
+			<option value="11">
+			  Hawaii
+			</option>
+			<option value="12">
+			  Idaho
+			</option>
+			<option value="13">
+			  Illinois
+			</option>
+			<option value="14">
+			  Indiana
+			</option>
+			<option value="15">
+			  Iowa
+			</option>
+			<option value="16">
+			  Kansas
+			</option>
+			<option value="17">
+			  Kentucky
+			</option>
+			<option value="18">
+			  Louisiana
+			</option>
+			<option value="19">
+			  Maine
+			</option>
+			<option value="20">
+			  Maryland
+			</option>
+			<option value="21">
+			  Massachusetts
+			</option>
+			<option value="22">
+			  Michigan
+			</option>
+			<option value="23">
+			  Minnesota
+			</option>
+			<option value="24">
+			  Mississippi
+			</option>
+			<option value="25">
+			  Missouri
+			</option>
+			<option value="26">
+			  Montana
+			</option>
+			<option value="27">
+			  Nebraska
+			</option>
+			<option value="28">
+			  Nevada
+			</option>
+			<option value="29">
+			  New Hampshire
+			</option>
+			<option value="30">
+			  New Jersey
+			</option>
+			<option value="31">
+			  New Mexico
+			</option>
+			<option value="32">
+			  New York
+			</option>
+			<option value="33">
+			  North Carolina
+			</option>
+			<option value="34">
+			  North Dakota
+			</option>
+			<option value="35">
+			  Ohio
+			</option>
+			<option value="36">
+			  Oklahoma
+			</option>
+			<option value="37">
+			  Oregon
+			</option>
+			<option value="38">
+			  Pennsylvania
+			</option>
+			<option value="39">
+			  Rhode Island
+			</option>
+			<option value="40">
+			  South Carolina
+			</option>
+			<option value="41">
+			  South Dakota
+			</option>
+			<option value="42">
+			  Tennessee
+			</option>
+			<option value="43">
+			  Texas
+			</option>
+			<option value="44">
+			  Utah
+			</option>
+			<option value="45">
+			  Vermont
+			</option>
+			<option value="46">
+			  Virginia 
+			</option>
+			<option value="47">
+			  Washington D.C.
+			</option>
+			<option value="48">
+			  Washington State
+			</option>
+			<option value="49">
+			  West Virginia 
+			</option>
+			<option value="50">
+			  Wisconsin
+			</option>
+			<option value="51">
+			  Wyoming
+			</option>
+		  </td>
+		</tr>
+        <tr>
+          <td>
+            Country
+          </td>
+          <td>
+            <select name="Country">
+            <option value="000" selected="selected">
+              [choose yours]
+            </option>
+            <option value="Australia">
+              Australia
+            </option>
+            <option value="Canada">
+              Canada
+            </option>
+            <option value="China">
+              China
+            </option>
+            <option value="France">
+			  France
+            </option>
+            <option value="Germany">
+              Germany
+            </option>
+            <option value="Mexico">
+              Mexico
+            </option>
+            <option value="Spain">
+              Spain
+            </option>
+            <option value="UK">
+              United Kingdom
+            </option>
+            <option value="USA">
+              United States
+            </option></select>
+          </td>
+        </tr>
+		<tr>
+		  <td>
+			Zip Code
+		  </td>
+		  <td>
+		    <input type="text" name="Zip Code">
+		  </td>
+		</tr>
+		<tr>
+		  <td>
+		    Comments
+		  </td>
+		  <td>
+		    <input type="text" name="Comments">
+		  </td>
+		</tr>
+        <tr>
+          <td></td>
+          <td>
+            <div id="myform_errorloc" class="error_strings">
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="Submit">
+          </td>
+        </tr>
+      </table>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
