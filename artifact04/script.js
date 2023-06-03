@@ -3,6 +3,7 @@ function validateForm(form) {
 	var validFirstname=false;
 	if (form.FirstName.value==="null" || form.FirstName.value==="" || form.FirstName.length > 20) {
 		alert("The first name is required and cannot be greater than 20 characters");
+		form.FirstName.focus();
 	} else {
 		validFirstname=true;
 	}
@@ -11,6 +12,7 @@ function validateForm(form) {
 	var validLastname=false;
 	if (form.LastName.value==="null" || form.LastName.value==="" || form.LastName.length > 50) {
 		alert("The last name is required and cannot be greater than 50 characters");
+		form.LastName.focus();
 	} else {
 		validLastname=true;
 	}
@@ -21,6 +23,7 @@ function validateForm(form) {
 	var dotpos = form.Email.lastIndexOf(".");
 	if (atpos<1 || dotpos<atpos+2 || dotpos+2>=form.Email.length) {
 		alert("Invalid email address. You need an '@' and a '.'");
+		form.Email.focus();
 	} else {
 		validEmail = true;
 	}
@@ -29,6 +32,7 @@ function validateForm(form) {
 	var validPhone=false;
 	if (isNaN(form.Phone.value) || form.Phone.length > 15 || form.Phone.value===null || form.Phone.value==="") {
 		alert("Invalid phone number. It must be at the most 15 characters long and consist of only numbers");
+		form.Phone.focus();
 	} else {
 		validPhone = true;
 	}
@@ -37,6 +41,7 @@ function validateForm(form) {
 	var validUsername=false;
 	if (form.Username.value==="null" || form.Username.value==="" || form.Username.length > 12) {
 		alert("A username is required and cannot be greater than 12 characters");
+		form.Username.focus();
 	} else {
 		validUsername=true;
 	}
@@ -45,6 +50,7 @@ function validateForm(form) {
 	var validPassword=false;
 	if (form.Password.value==="null" || form.Password.value==="" || form.Password.length > 7) {
 		alert("A password is required and cannot be longer than 7 characters");
+		form.Password.focus();
 	} else {
 		validPassword=true;
 	}
@@ -53,6 +59,7 @@ function validateForm(form) {
 	var validAddress=false;
 	if (form.Address.value==="null" || form.Address.value==="") {
 		alert("An address is required");
+		form.Address.focus();
 	} else {
 		validAddress=true;
 	}
@@ -61,6 +68,7 @@ function validateForm(form) {
 	var validCity=false;
 	if (form.City.value==="null" || form.City.value==="") {
 		alert("A city is required");
+		form.City.focus();
 	} else {
 		validCity=true;
 	}
@@ -69,6 +77,7 @@ function validateForm(form) {
 	var validState=false;
 	if (form.State.value==="null") {
 		alert("A state is required");
+		form.State.focus();
 	} else {
 		validState=true;
 	}	
@@ -77,6 +86,7 @@ function validateForm(form) {
 	var validCountry=false;
 	if (form.Country.value==="null") {
 		alert("A country is required");
+		form.Country.focus();
 	} else {
 		validCountry=true;
 	}
@@ -86,6 +96,7 @@ function validateForm(form) {
 		var validZipCode=false;
 		if (form.Zipcode.value==="null" || form.Zipcode.value==="" || form.Zipcode.length > 5) {
 			alert("A zipcode is required and cannot be longer than 5 digits");
+			form.Zipcode.focus();
 		} else {
 			validZipCode=true;
 		}
