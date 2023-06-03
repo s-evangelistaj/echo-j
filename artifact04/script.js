@@ -1,11 +1,11 @@
-function validateForm(){
+function validateForm(form) {
 	
 	var validFirstname=false;
 	firstname = document.getElementbyId("FirstName").value;
 	if (firstname==="null" || firstname==="" || firstname.length > 20) {
 		alert("The first name is required and cannot be greater than 20 characters");
 	} else {
-		validFirstName=true;
+		validFirstname=true;
 	}
 	return (validFirstname);
 	 
@@ -102,7 +102,10 @@ function validateForm(){
 		}
 		return(validZipCode)
 	}
-		
+	if (validFirstname === false || validLastname === false || validEmail === false || validPhone === false || validUsername === false || validPassword === false || validAddress === false || validCity === false || validState === false || validCountry === false || validZipCode === false) {
+		return false
+	} else {
+		return true	
 }
 	
 	
