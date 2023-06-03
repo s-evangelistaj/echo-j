@@ -105,7 +105,8 @@ function validateForm(form) {
 	if (validFirstname === false || validLastname === false || validEmail === false || validPhone === false || validUsername === false || validPassword === false || validAddress === false || validCity === false || validState === false || validCountry === false || validZipCode === false) {
 		return false
 	} else {
-		return true	
+		return true
+	}
 }
 	
 	
