@@ -90,7 +90,7 @@ function validateForm(form) {
 	} else {
 		validCountry=true;
 	}
-	return(validCountry)
+	return(validCountry);
 	
 	if (form.Country.value==="USA") {
 		var validZipCode=false;
@@ -100,12 +100,12 @@ function validateForm(form) {
 		} else {
 			validZipCode=true;
 		}
-		return(validZipCode)
+		return(validZipCode);
 	}
 	if (validFirstname === false || validLastname === false || validEmail === false || validPhone === false || validUsername === false || validPassword === false || validAddress === false || validCity === false || validState === false || validCountry === false || validZipCode === false) {
-		return false
+		return false;
 	} else {
-		return true
+		return true;
 	}
 }
 	
