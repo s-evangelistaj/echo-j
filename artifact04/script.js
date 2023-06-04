@@ -1,117 +1,112 @@
-function validateForm(form) {
+function validateForm() {
 	
-	var validFirstname=false;
-	if (form.FirstName.value==="null" || form.FirstName.value==="" || form.FirstName.length > 20) {
-		alert("The first name is required and cannot be greater than 20 characters");
-		form.FirstName.focus();
-	} else {
-		validFirstname=true;
-	}
-	return (validFirstname);
-	 
-	var validLastname=false;
-	if (form.LastName.value==="null" || form.LastName.value==="" || form.LastName.length > 50) {
-		alert("The last name is required and cannot be greater than 50 characters");
-		form.LastName.focus();
-	} else {
-		validLastname=true;
-	}
-	return (validFirstname && validLastname);
+	document.getElementById("errorMsg").innerHTML = "<p></p>";
 	
+	var validFirstName=false;
+	let firstname = document.forms["thisform"]["FirstName"].value;
+	if (firstname.length < 1 || firstname.value===null || firstname.length > 20) {
+		document.getElementById("errorMsg").innerHTML += "<p>The first name is required and cannot be greater than 20 characters</p>";
+	} else {
+		validFirstName=true;
+	}
+	
+	var validLastName=false;
+	let lastname = document.forms["thisform"]["LastName"].value;
+	if (lastname.length < 1 || lastname.value===null || lastname.length > 50) {
+		document.getElementById("errorMsg").innerHTML += "<p>The last name is required and cannot be greater than 50 characters</p>";
+	} else {
+		validLastName=true;
+	}
+		
 	var validEmail=false;
-	var atpos = form.Email.indexOf("@");
-	var dotpos = form.Email.lastIndexOf(".");
-	if (atpos<1 || dotpos<atpos+2 || dotpos+2>=form.Email.length) {
-		alert("Invalid email address. You need an '@' and a '.'");
-		form.Email.focus();
+	let email = document.forms["thisform"]["Email"].value;
+	var atpos = email.indexOf("@");
+	var dotpos = email.lastIndexOf(".");
+	if (atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length) {
+		document.getElementById("errorMsg").innerHTML += "<p>Invalid email address. You need an '@' and a '.'</p>";
 	} else {
-		validEmail = true;
+		validEmail=true;
 	}
-	return (validEmail);
 	
 	var validPhone=false;
-	if (isNaN(form.Phone.value) || form.Phone.length > 15 || form.Phone.value===null || form.Phone.value==="") {
-		alert("Invalid phone number. It must be at the most 15 characters long and consist of only numbers");
-		form.Phone.focus();
+	let phone = document.forms["thisform"]["Phone"].value;
+	phonenum = phone.toString();
+	if (isNaN(phone) || phonenum.length > 15 || phonenum.value===null || phonenum.length < 1) {
+		document.getElementById("errorMsg").innerHTML += "<p>Invalid phone number. It must be at the most 15 characters long and consist of only numbers</p>";
 	} else {
-		validPhone = true;
+		validPhone=true;
 	}
-	return(validPhone);
 	
 	var validUsername=false;
-	if (form.Username.value==="null" || form.Username.value==="" || form.Username.length > 12) {
-		alert("A username is required and cannot be greater than 12 characters");
-		form.Username.focus();
+	let username = document.forms["thisform"]["Username"].value;
+	if (username.value===null || username.length < 1 || username.length > 12) {
+		document.getElementById("errorMsg").innerHTML += "<p>A username is required and cannot be greater than 12 characters</p>";
 	} else {
 		validUsername=true;
 	}
-	return(validUsername);
-	
+
 	var validPassword=false;
-	if (form.Password.value==="null" || form.Password.value==="" || form.Password.length > 7) {
-		alert("A password is required and cannot be longer than 7 characters");
-		form.Password.focus();
+	let password = document.forms["thisform"]["Password"].value;
+	if (password.value===null || password.length < 1 || password.length > 7) {
+		document.getElementById("errorMsg").innerHTML += "<p>A password is required and cannot be longer than 7 characters</p>";
 	} else {
 		validPassword=true;
 	}
-	return(validPassword);
 	
 	var validAddress=false;
-	if (form.Address.value==="null" || form.Address.value==="") {
-		alert("An address is required");
-		form.Address.focus();
+	let address = document.forms["thisform"]["Address"].value;
+	if (address.value===null || address.length < 1) {
+		document.getElementById("errorMsg").innerHTML += "<p>An address is required</p>";
 	} else {
 		validAddress=true;
 	}
-	return(validAddress);
 	
 	var validCity=false;
-	if (form.City.value==="null" || form.City.value==="") {
-		alert("A city is required");
-		form.City.focus();
+	let city = document.forms["thisform"]["City"].value;
+	if (city.value===null || city.length < 1) {
+		document.getElementById("errorMsg").innerHTML += "<p>A city is required</p>";
 	} else {
 		validCity=true;
 	}
-	return(validCity);
 	
 	var validState=false;
-	if (form.State.value==="null") {
-		alert("A state is required");
-		form.State.focus();
+	let state = document.forms["thisform"]["State"];
+	statevalue = state.value;
+	if (statevalue==="none") {
+		document.getElementById("errorMsg").innerHTML += "<p>A state is required</p>";
 	} else {
 		validState=true;
 	}	
-	return(validState);
-	
+				
 	var validCountry=false;
-	if (form.Country.value==="null") {
-		alert("A country is required");
-		form.Country.focus();
+	let country = document.forms["thisform"]["Country"];
+	countryvalue = country.value;
+	if (countryvalue==="none") {
+		document.getElementById("errorMsg").innerHTML += "<p>A country is required</p>";
 	} else {
 		validCountry=true;
+		if (countryvalue==="USA") {
+			var validZipCode=false;
+			let zipcode = document.forms["thisform"]["ZipCode"].value;
+			if (zipcode.value===null || zipcode.length < 1 || zipcode.length > 5) {
+				document.getElementById("errorMsg").innerHTML += "<p>A zipcode is required and cannot be longer than 5 digits</p>";
+			} else {
+				validZipCode=true;
+			}
+		} 
 	}
-	return(validCountry);
-	
-	if (form.Country.value==="USA") {
-		var validZipCode=false;
-		if (form.Zipcode.value==="null" || form.Zipcode.value==="" || form.Zipcode.length > 5) {
-			alert("A zipcode is required and cannot be longer than 5 digits");
-			form.Zipcode.focus();
+
+	if (validFirstName===true && validLastName===true && validEmail===true && validPhone===true && validUsername===true && validPassword===true && validAddress===true && validCity===true && validState===true && validCountry===true) {
+		if (countryvalue==="USA") {
+			if (validZipCode===true) {
+				return true;
+			} else {
+				return false;
+			}
 		} else {
-			validZipCode=true;
+			return true;
 		}
-		return(validZipCode);
-	}
-	if (validFirstname === false || validLastname === false || validEmail === false || validPhone === false || validUsername === false || validPassword === false || validAddress === false || validCity === false || validState === false || validCountry === false || validZipCode === false) {
-		return false;
 	} else {
-		return true;
+		return false;
 	}
 }
-	
-	
-	
-		
-	 
-
-
