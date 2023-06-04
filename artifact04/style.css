@@ -14,11 +14,17 @@ B {
   font-family: Verdana; 
   font-size:14px; 
   color:#660000;
+  float: left;
+}
+img {
+  float: left;
+  width:5%;
+  height:5%;
 }
 table {
   padding:2px; 
   border:0;
 }
 td { 
-  margin: right;
+  margin-right:0;
 }
