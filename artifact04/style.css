@@ -28,3 +28,7 @@ table {
 td { 
   margin-right:0;
 }
+.validators {
+  bottom:50px;
+  position:absolute;
+}
