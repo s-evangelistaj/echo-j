@@ -1,1 +1,41 @@
-
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Artifact 05 - Create a slideshow using JavaScript</title>
+		<meta name="description" content="Artifact 05 - Create a slideshow using JavaScript">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="Slides">
+				<img src="image1.jpg" alt="Image of Chocolate Chip Cookies" class="cookies">
+				<div class="caption">Chocolate Chip Cookies</div>
+			</div>
+			<div class="Slides">
+				<img src="image2.jpg" alt="Image of Snickerdoodle Cookies" class="cookies">
+				<div class="caption">Snickerdoodle Cookies</div>
+			</div>
+			<div class="Slides"> 
+				<img src="image3.jpg" alt="Image of Red Velvet Cookies" class="cookies">
+				<div class="caption">Red Velvet Cookies</div>
+			</div>
+			<div class="Slides">
+				<img src="image4.jpg" alt="Image of Molasses Cookies" class="cookies">
+				<div class="caption">Molasses Cookies</div>
+			</div>
+			<div class="Slides">
+				<img src="image5.jpg" alt="Image of Gingersnap Cookies" class="cookies">
+				<div class="caption">Gingersnap Cookies</div>
+			</div>
+			<button class="previous" onclick="nextSlide(-1)">Prev Slide</button>
+			<button class="next" onclick="nextSlide(1)">Next Slide</button>
+			<button class="auto" onclick="autoSlide()">Automatic Slideshow</button>
+		</div>
+		<div class="validators">
+			<a href="https://validator.w3.org/nu/" target="_blank"><img src="nuhtml.png" alt="Nu HTML Validator" title="Nu HTML Validator" class="validator"></a>
+			<a href="https://jigsaw.w3.org/css-validator/#validate_by_input" target="_blank"><img src="w3c.png" alt="W3C CSS Validator" title="W3C CSS Validator" class="validator"></a>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
