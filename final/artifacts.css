@@ -14,7 +14,6 @@ body {
 }
 #nav {
 	background-color: #0C3D6E;
-	position:relative;
 }
 p {
 	line-height: 1.5;
@@ -32,7 +31,7 @@ img {
 	padding: 0.5em 0;
 }
 #feature, .article {
-	height: 60em;
+	height: 50em;
 	margin-bottom: 1em;
 }
 #feature {
