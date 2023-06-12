@@ -30,7 +30,7 @@ li {
 	padding: 0.5em 0;
 }
 #feature, .article {
-	height: 10em;
+	height: auto;
 	margin-bottom: 1em;
 }
 #feature {
