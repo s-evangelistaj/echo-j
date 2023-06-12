@@ -25,8 +25,16 @@ function validateForm() {
 	} else {
 		validComment=true;
 	}
+	
+	var validSubject=false;
+	let subject = document.forms["thisform"]["subject"].value;
+	if (subject.length <1 || subject.value===null) {
+		alert("A subject is required.");
+	} else {
+		validSubject=true;
+	}
 
-	if (validUsername===true && validEmail===true && validComment===true) {
+	if (validUsername===true && validEmail===true && validComment===true && validSubject===true) {
 		return true;
 	} else {
 		return false;
