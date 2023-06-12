@@ -18,6 +18,9 @@ body {
 #nav {
 	background-color: #1974D2;
 }
+p {
+	line-height: 1.5;
+}
 .column1, .column2, .column3 {
 	width: 31.3%;
 	float: left;
