@@ -1,0 +1,35 @@
+* {
+	font-family: 'JelleeBold';
+	color: #B59410;
+	text-align: center;
+}
+body {
+	width: 90%;
+	margin: 0 auto;
+	background-image: url("https://t4.ftcdn.net/jpg/05/25/26/35/360_F_525263584_x7NJHO63xd7G3WNr37vLGmtbfRI01vsy.jpg");
+	background-repeat: repeat;
+}
+#content {
+	overflow: auto;
+}
+#nav {
+	margin: 1%;
+}
+#nav {
+	background-color: #1974D2;
+}
+.column {
+	width: 31.3%;
+	margin: auto;
+}
+.column {
+	background-color: #0D3AA9;
+}
+li {
+	display: inline;
+	padding: 0.5em;
+}
+.article {
+	height: 10em;
+	margin-bottom: 1em;
+}

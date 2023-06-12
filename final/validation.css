@@ -1,0 +1,47 @@
+* {
+	font-family: 'JelleeBold';
+	color: #B59410;
+	text-align: center;
+}
+body {
+	width: 90%;
+	margin: 0 auto;
+	background-image: url("https://t4.ftcdn.net/jpg/05/25/26/35/360_F_525263584_x7NJHO63xd7G3WNr37vLGmtbfRI01vsy.jpg");
+	background-repeat: repeat;
+	z-index: -1;
+	position: relative;
+}
+#content {
+	overflow: auto;
+}
+#nav {
+	margin: 1%;
+}
+#nav {
+	background-color: #1974D2;
+}
+.html {
+	width: 40%;
+	margin: 1%;
+  	float: left;
+  	background-color: #0D3AA9;
+}
+.css {
+  	width: 40%;
+	margin: 1%;
+  	float: right;
+  	background-color: #0D3AA9;
+}
+li {
+	display: inline;
+	padding: 0.5em;
+}
+.article {
+	height: auto;
+	margin-bottom: 1em;
+}
+img {
+	z-index: 10;
+	max-width: 95%;
+	height: auto;
+}
