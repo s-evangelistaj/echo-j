@@ -18,12 +18,15 @@ body {
 #nav {
 	background-color: #0C3D6E;
 }
+p {
+	line-height: 1.5;
+}
 .column {
 	width: 31.3%;
 	margin: auto;
 }
 .column {
-	background-color: #0D3AA9;
+	background-color: #0B349D;
 }
 li {
 	display: inline;
