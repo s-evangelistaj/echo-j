@@ -3,7 +3,7 @@ function validateForm() {
 	var validUsername=false;
 	let username = document.forms["thisform"]["username"].value;
 	if (username.length < 1 || username.value===null) {
-		alert("The first name is required and cannot be greater than 20 characters");
+		alert("The username is required.");
 	} else {
 		validUsername=true;
 	}
@@ -17,11 +17,19 @@ function validateForm() {
 	} else {
 		validEmail=true;
 	}
+	
+	var validComment=false;
+	let comment = document.forms["thisform"]["comment"].value;
+	if (comment.length <1 ||comment.value===null) {
+		alert("A comment is required.");
+	} else {
+		validComment=true;
+	}
 
-	if (validUsername===true && validEmail===true) {
-    return true;
-		} else {
-      return false;
-    }
+	if (validUsername===true && validEmail===true && validComment===true) {
+		return true;
+	} else {
+		return false;
+	}
 }
 
