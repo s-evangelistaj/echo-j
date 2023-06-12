@@ -1,6 +1,6 @@
 * {
 	font-family: 'JelleeBold';
-	color: #B59410;
+	color: #FDD017;
 	text-align: center;
 }
 body {
@@ -16,18 +16,21 @@ body {
 	margin: 1%;
 }
 #nav {
-	background-color: #1974D2;
+	background-color: #0C3D6E;
 }
 .column {
 	width: 31.3%;
 	margin: auto;
 }
 .column {
-	background-color: #0D3AA9;
+	background-color: #0B349D;
 }
 li {
 	display: inline;
 	padding: 0.5em;
+}
+p {
+	line-height: 1.5;
 }
 #footer {
 	background-color: #000080;
