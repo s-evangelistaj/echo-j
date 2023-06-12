@@ -21,22 +21,6 @@ body {
 p {
 	line-height: 1.5;
 }
-.column1, .column2, .column3 {
-	width: 31.3%;
-	float: left;
-	margin: 1%;}
-	.column3 {
-	margin-right: 0%;
-}
-.column1 {
-	background-color: #062047;
-}
-.column2 {
-	background-color: #0B3399;
-}
-.column3 {
-	background-color: #061D95;
-}
 li {
 	display: inline;
 	padding: 0.5em;
