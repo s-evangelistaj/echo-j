@@ -47,3 +47,6 @@ img {
 	width:27%;
 	height:27%;
 }
+iframe {
+	border:none;
+}
