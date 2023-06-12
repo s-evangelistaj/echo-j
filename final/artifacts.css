@@ -15,6 +15,9 @@ body {
 #nav {
 	background-color: #0C3D6E;
 }
+#content {
+	overflow: auto;
+}
 p {
 	line-height: 1.5;
 }
