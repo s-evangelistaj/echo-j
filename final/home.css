@@ -37,8 +37,9 @@ li {
 	padding: 0.5em 0;
 }
 #feature, .article {
-	height: 15em;
+	height: 12em;
 	margin-bottom: 1em;
+	width: 50%;
 }
 #feature {
 	background-color: #00008B;
